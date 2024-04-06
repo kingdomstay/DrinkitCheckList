@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" style="height: 100%">
+<html lang="ru" style="height: 100%; overflow: hidden">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -13,19 +13,6 @@
     <title>Чек-лист</title>
 </head>
 <body style="display: flex; flex-direction: column; height: 100%">
-<header>
-    <nav style="background: #192DA8" class="navbar">
-        <div class="container-fluid">
-
-            <form class="d-flex flex-fill justify-content-center">
-                <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
-                <label class="btn btn-outline-light mx-1" for="option1">Ежедневный</label>
-                <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
-                <label class="btn btn-outline-light mx-1" for="option2">План уборок</label>
-            </form>
-        </div>
-    </nav>
-</header>
 <main class="container" style="flex: 1">
     <div class="row" style="height: calc(100vh - 54px); overflow: hidden">
         <div class="col" style="border-right: 2px solid #d9d9d9; overflow-y: auto; max-height: 100%">
@@ -188,5 +175,18 @@
         </div>
     </div>
 </main>
+<header>
+    <nav style="background: #192DA8" class="navbar">
+        <div class="container-fluid">
+
+            <form class="d-flex flex-fill justify-content-center">
+                <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
+                <label class="btn btn-outline-light mx-1" for="option1">Ежедневный</label>
+                <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                <label class="btn btn-outline-light mx-1" for="option2">План уборок</label>
+            </form>
+        </div>
+    </nav>
+</header>
 </body>
 </html>
